@@ -98,7 +98,7 @@ def time_stats(df):
 
     
     
-    # TO DO: display the most common day of week
+    # display the most common day of week
     # Extracting dayofweek from the Start Time column to create a day_of_week column
     df['day_of_week'] = df['Start Time'].dt.dayofweek
     # Finding the most common day of the week from 0 to 6
@@ -108,7 +108,7 @@ def time_stats(df):
 
     
     
-    # TO DO: display the most common start hour
+    # display the most common start hour
     # Extracting hour from the Start Time column to create an hour column
     df['hour'] = df['Start Time'].dt.hour
     # Finding the most common hour from 0 to 23
@@ -129,17 +129,17 @@ def station_stats(df):
     
     
 
-    # TO DO: display most commonly used start station
+    # display most commonly used start station
     print('Most Popular Start Station: ', df['Start Station'].mode()[0])
     
     
     
-    # TO DO: display most commonly used end station
+    # display most commonly used end station
     print('Most Popular End Station: ', df['End Station'].mode()[0])
     
     
     
-    # TO DO: display most frequent combination of start station and end station trip
+    # display most frequent combination of start station and end station trip
     print('\nMost Frequent Combination of Start and End Station Trips:\n\n',df.groupby(['Start Station', 'End Station']).size().nlargest(1))
 
 
@@ -156,12 +156,12 @@ def trip_duration_stats(df):
 
     
     
-    # TO DO: display total travel time
+    # display total travel time
     print('Total Trip Duration:', df['Trip Duration'].sum())
 
     
     
-    # TO DO: display mean travel time
+    # display mean travel time
     print('Mean Trip Duration:', df['Trip Duration'].mean())
 
     
@@ -178,20 +178,20 @@ def user_stats(df):
 
 
     
-    # TO DO: Display counts of user types
+    # Display counts of user types
     user_types = df['User Type'].value_counts()
     print(user_types,'\n')
     
     
     
-    # TO DO: Display counts of gender
+    # Display counts of gender
     if 'Gender' in df.columns:    
         gender = df['Gender'].value_counts()
         print(gender,'\n')
         
         
         
-    # TO DO: Display earliest, most recent, and most common year of birth 
+    # Display earliest, most recent, and most common year of birth 
     if 'Birth Year' in df.columns:
         print('Earliest year of Birth:', df['Birth Year'].min())
         print('Most Recent year of Birth:', df['Birth Year'].max())
