@@ -8,6 +8,7 @@ In this project, you'll be simulating a realistic workflow to refactor your prev
 
 ### List of software, firmware and hardware you may require.
 * Installing GIT tool : https://git-scm.com/downloads.
+* Installing python : https://www.python.org/downloads/.
 
 ### Files used
 1. The following file contains necessary commands used to do tasks:
